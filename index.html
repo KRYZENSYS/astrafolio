@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASTRAFOLIO — Information Systems • Programming • Artificial Intelligence</title>
+  <meta name="description" content="ASTRAFOLIO — a premium technology platform for Information Systems, Programming, and Artificial Intelligence. Learn modern technologies, build real-world projects, and explore the future." />
+  <meta name="keywords" content="ASTRAFOLIO, programming, AI, web development, android, python, javascript, kotlin, tutorials, open source" />
+  <meta name="author" content="ASTRAFOLIO" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ASTRAFOLIO — Premium Tech Platform" />
+  <meta property="og:description" content="Information Systems • Programming • Artificial Intelligence" />
+  <meta name="theme-color" content="#0B0F19" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>💻</text></svg>" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <pre class="loader-logo">╔════════════════════╗
+💻 <span>ASTRAFOLIO</span>
+╚════════════════════╝</pre>
+      <div class="loader-bar"><span></span></div>
+      <p class="loader-text">Booting futuristic experience...</p>
+    </div>
+  </div>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <header class="nav-wrap" id="navWrap">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#home" class="nav-logo" aria-label="ASTRAFOLIO home">
+        <span class="logo-glyph">💻</span>
+        <span class="logo-text">ASTRA<span>FOLIO</span></span>
+      </a>
+      <ul class="nav-menu" id="navMenu" role="menubar">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#categories" class="nav-link">Categories</a></li>
+        <li><a href="#articles" class="nav-link">Articles</a></li>
+        <li><a href="#technologies" class="nav-link">Stack</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+        <a href="#newsletter" class="btn btn-primary nav-cta">Subscribe</a>
+        <button class="icon-btn nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <canvas id="particles" aria-hidden="true"></canvas>
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <pre class="hero-logo" aria-label="ASTRAFOLIO">
+╔════════════════════╗
+💻 <span class="glow">ASTRAFOLIO</span>
+╚════════════════════╝</pre>
+      <h1 class="hero-title">
+        <span class="reveal-line">Information Systems</span>
+        <span class="dot-sep">•</span>
+        <span class="reveal-line">Programming</span>
+        <span class="dot-sep">•</span>
+        <span class="reveal-line gradient-text">Artificial Intelligence</span>
+      </h1>
+      <p class="hero-sub">Learn modern technologies, build real-world projects, and explore the future of software development.</p>
+      <div class="hero-cta">
+        <a href="#articles" class="btn btn-primary"><span>Explore Articles</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://t.me/astrafolio" target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.13-3.05-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+          <span>Join Telegram</span>
+        </a>
+      </div>
+      <div class="hero-stats" aria-label="Quick stats">
+        <div class="hero-stat"><strong>10K+</strong><span>Readers</span></div>
+        <div class="hero-stat"><strong>500+</strong><span>Tutorials</span></div>
+        <div class="hero-stat"><strong>100+</strong><span>Projects</span></div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll to about"><span></span></a>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">// about us</span>
+        <h2 class="section-title">About <span class="gradient-text">ASTRAFOLIO</span></h2>
+        <p class="section-sub">A premium technology platform built for the next generation of developers.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass reveal"><div class="about-icon">💻</div><h3>Information Systems</h3><p>Architecture, databases, and enterprise-grade systems designed to scale with modern businesses.</p></div>
+        <div class="about-card glass reveal"><div class="about-icon">⚡</div><h3>Programming</h3><p>Hands-on tutorials across languages, frameworks and paradigms — from fundamentals to advanced patterns.</p></div>
+        <div class="about-card glass reveal"><div class="about-icon">🤖</div><h3>Artificial Intelligence</h3><p>Machine learning, neural networks, and applied AI — practical guides for real product builders.</p></div>
+        <div class="about-text glass reveal">
+          <p><strong>ASTRAFOLIO</strong> is a technology platform focused on Information Systems, Programming, Artificial Intelligence, and modern software development.</p>
+          <p>Our goal is to help developers learn practical skills, discover new technologies, and build amazing digital products.</p>
+          <ul class="checks">
+            <li>✔ Practical, project-based learning</li>
+            <li>✔ Clean, modern code standards</li>
+            <li>✔ Active developer community</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="categories" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">// explore topics</span>
+        <h2 class="section-title">Categories</h2>
+        <p class="section-sub">Pick your track — from web and mobile to AI and open source.</p>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-card glass reveal" data-cat="programming"><div class="cat-emoji">💻</div><h3>Programming Tutorials</h3><p>Step-by-step guides for every level.</p></div>
+        <div class="cat-card glass reveal" data-cat="web"><div class="cat-emoji">🌐</div><h3>Web Development</h3><p>Modern stacks, frameworks, and best practices.</p></div>
+        <div class="cat-card glass reveal" data-cat="android"><div class="cat-emoji">📱</div><h3>Android Development</h3><p>Kotlin, Jetpack, and Material You.</p></div>
+        <div class="cat-card glass reveal" data-cat="python"><div class="cat-emoji">🐍</div><h3>Python</h3><p>From scripting to data and AI.</p></div>
+        <div class="cat-card glass reveal" data-cat="js"><div class="cat-emoji">⚡</div><h3>JavaScript</h3><p>Frontend, backend, and everything in between.</p></div>
+        <div class="cat-card glass reveal" data-cat="kotlin"><div class="cat-emoji">🟣</div><h3>Kotlin</h3><p>Concise, safe, multiplatform code.</p></div>
+        <div class="cat-card glass reveal" data-cat="ai"><div class="cat-emoji">🤖</div><h3>Artificial Intelligence</h3><p>LLMs, ML, neural networks, and beyond.</p></div>
+        <div class="cat-card glass reveal" data-cat="oss"><div class="cat-emoji">☁</div><h3>Open Source Projects</h3><p>Build in public, ship with confidence.</p></div>
+        <div class="cat-card glass reveal" data-cat="learn"><div class="cat-emoji">📚</div><h3>Learning Resources</h3><p>Books, courses, and curated roadmaps.</p></div>
+        <div class="cat-card glass reveal" data-cat="news"><div class="cat-emoji">📰</div><h3>Technology News</h3><p>What matters in tech, every week.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="articles" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">// featured reads</span>
+        <h2 class="section-title">Featured Articles</h2>
+        <p class="section-sub">Hand-picked tutorials, deep dives, and case studies.</p>
+      </div>
+      <div class="article-controls reveal">
+        <div class="search-wrap">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input type="search" id="articleSearch" placeholder="Search articles..." aria-label="Search articles" />
+        </div>
+        <div class="filter-pills" id="filterPills" role="tablist">
+          <button class="pill is-active" data-filter="all">All</button>
+          <button class="pill" data-filter="python">Python</button>
+          <button class="pill" data-filter="js">JavaScript</button>
+          <button class="pill" data-filter="kotlin">Kotlin</button>
+          <button class="pill" data-filter="ai">AI</button>
+          <button class="pill" data-filter="oss">Open Source</button>
+        </div>
+      </div>
+      <div class="article-grid" id="articleGrid">
+        <article class="post-card glass reveal" data-tags="python">
+          <div class="post-cover" style="--c1:#00E5FF;--c2:#8B5CF6"><span>🐍</span></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="badge">Python</span><span>8 min</span><span>Jan 12, 2026</span></div>
+            <h3>Getting Started with Python</h3>
+            <p>A modern beginner's guide to Python — tooling, virtual environments, and your first real project.</p>
+            <a href="#" class="post-link">Continue Reading →</a>
+          </div>
+        </article>
+        <article class="post-card glass reveal" data-tags="js">
+          <div class="post-cover" style="--c1:#FACC15;--c2:#00E5FF"><span>⚡</span></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="badge">JavaScript</span><span>12 min</span><span>Feb 03, 2026</span></div>
+            <h3>Build Modern Websites with JavaScript</h3>
+            <p>Component-driven UI, async data, and production-grade patterns for today's web.</p>
+            <a href="#" class="post-link">Continue Reading →</a>
+          </div>
+        </article>
+        <article class="post-card glass reveal" data-tags="kotlin">
+          <div class="post-cover" style="--c1:#8B5CF6;--c2:#F472B6"><span>📱</span></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="badge">Kotlin</span><span>10 min</span><span>Mar 09, 2026</span></div>
+            <h3>Android Development using Kotlin</h3>
+            <p>From zero to a polished Android app with Kotlin, Jetpack Compose, and Material You.</p>
+            <a href="#" class="post-link">Continue Reading →</a>
+          </div>
+        </article>
+        <article class="post-card glass reveal" data-tags="ai">
+          <div class="post-cover" style="--c1:#22D3EE;--c2:#8B5CF6"><span>🤖</span></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="badge">AI</span><span>9 min</span><span>Apr 21, 2026</span></div>
+            <h3>AI Tools Every Developer Should Know</h3>
+            <p>Boost your workflow with the AI tools shipping real productivity in 2026.</p>
+            <a href="#" class="post-link">Continue Reading →</a>
+          </div>
+        </article>
+        <article class="post-card glass reveal" data-tags="oss">
+          <div class="post-cover" style="--c1:#10B981;--c2:#00E5FF"><span>☁</span></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="badge">Open Source</span><span>7 min</span><span>May 02, 2026</span></div>
+            <h3>Open Source Projects for Beginners</h3>
+            <p>How to pick, contribute to, and grow your first open source project.</p>
+            <a href="#" class="post-link">Continue Reading →</a>
+          </div>
+        </article>
+        <article class="post-card glass reveal" data-tags="js">
+          <div class="post-cover" style="--c1:#8B5CF6;--c2:#00E5FF"><span>🌐</span></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="badge">Web</span><span>11 min</span><span>Jun 18, 2026</span></div>
+            <h3>Designing Cyberpunk UIs with Glassmorphism</h3>
+            <p>Replicate the neon-noir aesthetic in production interfaces without sacrificing UX.</p>
+            <a href="#" class="post-link">Continue Reading →</a>
+          </div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>No articles match your search.</p>
+    </div>
+  </section>
+
+  <section id="technologies" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">// our stack</span>
+        <h2 class="section-title">Technologies</h2>
+        <p class="section-sub">The tools we use to ship — every day.</p>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-card glass reveal" style="--c:#3776AB"><span>🐍</span><p>Python</p></div>
+        <div class="tech-card glass reveal" style="--c:#F7DF1E"><span>⚡</span><p>JavaScript</p></div>
+        <div class="tech-card glass reveal" style="--c:#3178C6"><span>🔷</span><p>TypeScript</p></div>
+        <div class="tech-card glass reveal" style="--c:#E34F26"><span>🟠</span><p>HTML5</p></div>
+        <div class="tech-card glass reveal" style="--c:#1572B6"><span>🔵</span><p>CSS3</p></div>
+        <div class="tech-card glass reveal" style="--c:#61DAFB"><span>⚛️</span><p>React</p></div>
+        <div class="tech-card glass reveal" style="--c:#3C873A"><span>🟢</span><p>Node.js</p></div>
+        <div class="tech-card glass reveal" style="--c:#7F52FF"><span>🟣</span><p>Kotlin</p></div>
+        <div class="tech-card glass reveal" style="--c:#3DDC84"><span>🤖</span><p>Android</p></div>
+        <div class="tech-card glass reveal" style="--c:#F05032"><span>🔧</span><p>Git</p></div>
+        <div class="tech-card glass reveal" style="--c:#181717"><span>🐙</span><p>GitHub</p></div>
+        <div class="tech-card glass reveal" style="--c:#2496ED"><span>🐳</span><p>Docker</p></div>
+        <div class="tech-card glass reveal" style="--c:#FCC624"><span>🐧</span><p>Linux</p></div>
+        <div class="tech-card glass reveal" style="--c:#FF6F00"><span>🧠</span><p>TensorFlow</p></div>
+        <div class="tech-card glass reveal" style="--c:#10A37F"><span>✨</span><p>OpenAI</p></div>
+        <div class="tech-card glass reveal" style="--c:#FFCA28"><span>🔥</span><p>Firebase</p></div>
+        <div class="tech-card glass reveal" style="--c:#47A248"><span>🍃</span><p>MongoDB</p></div>
+        <div class="tech-card glass reveal" style="--c:#336791"><span>🐘</span><p>PostgreSQL</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat glass reveal"><div class="stat-num" data-target="10000">0</div><span>+</span><p>Readers</p></div>
+        <div class="stat glass reveal"><div class="stat-num" data-target="500">0</div><span>+</span><p>Tutorials</p></div>
+        <div class="stat glass reveal"><div class="stat-num" data-target="100">0</div><span>+</span><p>Projects</p></div>
+        <div class="stat glass reveal"><div class="stat-num" data-target="24">0</div><span>/7</span><p>Updates</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">// why us</span>
+        <h2 class="section-title">Why Choose <span class="gradient-text">ASTRAFOLIO</span></h2>
+        <p class="section-sub">Built by developers, for developers.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card glass reveal">✔ Practical Tutorials</div>
+        <div class="why-card glass reveal">✔ Clean Code</div>
+        <div class="why-card glass reveal">✔ Modern Technologies</div>
+        <div class="why-card glass reveal">✔ AI Integration</div>
+        <div class="why-card glass reveal">✔ Open Source</div>
+        <div class="why-card glass reveal">✔ Community Driven</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">// community</span>
+        <h2 class="section-title">What Developers Say</h2>
+      </div>
+      <div class="testi-grid">
+        <figure class="testi glass reveal">
+          <blockquote>“ASTRAFOLIO feels like a cheat code. The tutorials are clean, the design is gorgeous, and the AI articles genuinely level up my work.”</blockquote>
+          <figcaption><strong>A. Karimov</strong><span>Full-stack Engineer</span></figcaption>
+        </figure>
+        <figure class="testi glass reveal">
+          <blockquote>“The cyberpunk aesthetic is a vibe, but the content is the real star. Best free dev resource I’ve found this year.”</blockquote>
+          <figcaption><strong>L. Yusupova</strong><span>Android Developer</span></figcaption>
+        </figure>
+        <figure class="testi glass reveal">
+          <blockquote>“I shipped my first ML side-project using the ASTRAFOLIO AI track. Loved the practical, no-fluff approach.”</blockquote>
+          <figcaption><strong>M. Saidov</strong><span>ML Engineer</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="newsletter" class="section newsletter">
+    <div class="container">
+      <div class="newsletter-card glass reveal">
+        <div class="newsletter-text">
+          <h2 class="section-title">Stay <span class="gradient-text">Updated</span></h2>
+          <p>Get the newest tutorials, projects and AI deep-dives — straight to your inbox.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <label class="sr-only" for="emailInput">Email Address</label>
+          <input type="email" id="emailInput" placeholder="Email Address" required />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <p class="newsletter-msg" id="newsletterMsg" hidden></p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo"><span class="logo-glyph">💻</span><span class="logo-text">ASTRA<span>FOLIO</span></span></a>
+        <p>Information Systems • Programming • Artificial Intelligence</p>
+        <div class="footer-social">
+          <a href="https://t.me/astrafolio" target="_blank" rel="noopener" aria-label="Telegram">📨</a>
+          <a href="https://github.com/KRYZENSYS/astrafolio" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+          <a href="#" aria-label="YouTube">▶</a>
+          <a href="#" aria-label="Instagram">📷</a>
+        </div>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#articles">Tutorials</a></li>
+          <li><a href="#technologies">Stack</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 ASTRAFOLIO. All Rights Reserved.</p>
+      <p>Crafted with <span class="grad">💙</span> in Uzbekistan</p>
+    </div>
+  </footer>
+
+  <a href="#home" class="back-top" id="backTop" aria-label="Back to top">↑</a>
+
+  <div class="float-social" aria-label="Floating social buttons">
+    <a href="https://t.me/astrafolio" target="_blank" rel="noopener" aria-label="Telegram">📨</a>
+    <a href="https://github.com/KRYZENSYS/astrafolio" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
