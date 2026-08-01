@@ -1,0 +1,16 @@
+{
+  "name": "ASTRAFOLIO",
+  "short_name": "ASTRAFOLIO",
+  "description": "Information Systems • Programming • Artificial Intelligence",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0B0F19",
+  "theme_color": "#0B0F19",
+  "lang": "en",
+  "icons": [
+    { "src": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' rx='32' fill='%230B0F19'/><text x='50%' y='58%' text-anchor='middle' font-size='120'>💻</text></svg>", "sizes": "192x192", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' rx='80' fill='%230B0F19'/><text x='50%' y='58%' text-anchor='middle' font-size='320'>💻</text></svg>", "sizes": "512x512", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
